@@ -1,7 +1,15 @@
 'use strict';
 
 function compare_collections(collection_a, collection_b) {
-  //在这里写入代码
+  let result = [];
+  for (let i of collection_b) {
+    result=collection_a.reduce(function (a, b) {
+      if (b === i) {
+        return true;
+      }
+    }, []);
+  }
+  return result;
 }
 
 module.exports = compare_collections;
