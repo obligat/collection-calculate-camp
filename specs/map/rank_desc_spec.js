@@ -9,4 +9,6 @@ describe('rank by desc', function() {
     var result = rank_desc(collection_a);
     expect(result).toEqual(collection_b);
   });
+  
+ 
 });

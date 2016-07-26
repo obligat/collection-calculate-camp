@@ -1,6 +1,9 @@
 'use strict';
 var rank_desc = function(collection){
-  return [2,3,4,5,6];
+  function a(a,b) {
+    return a-b;
+  }
+  return collection.sort(a);
 };
 
 module.exports = rank_desc;
