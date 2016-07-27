@@ -1,7 +1,7 @@
 'use strict';
 
-function calculate_elements_sum(collection, element) {
-  return collection.reverse().find((it)=>indexOf(it===element));
+function find_element_last_subscript(collection, element) {
+  return collection.lastIndexOf(element);
 }
 
-module.exports = calculate_elements_sum;
+module.exports = find_element_last_subscript;
